@@ -83,7 +83,7 @@ export const login = async (req, res) => {
       coverImg: user.coverImg,
     });
   } catch (error) {
-    console.log(`error in logout controller , ${error.message}`);
+    console.log(`error in login controller , ${error.message}`);
     res.status(500).json({ error: "Internal server error" });
   }
 };
